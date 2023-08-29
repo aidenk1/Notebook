@@ -4,12 +4,13 @@ title: Student Blog
 ---
 
 
-## Build you Home Page here 
-This is about your journey. Start now!!!
+## Aiden Kim's Notebook
+Welcome to my notebook.
 
-## Overview of Hacks, Study and Tangibles
-Blogging in GitHub pages is a way to learn and code at the same time. 
+## About Me
+My name is Aiden and I am 16 years old. I was born in Canada, but moved to San Diego when I was very young. I enjoy playing the guitar, hanging out with friends & family, and video games. My favorite subjects are Chemistry and Math.
 
-- Plans, Lists, [Scrum Boards](https://clickup.com/blog/scrum-board/) help you to track key events, show progress and record time.  Effort is a big part of your class grade.  Show plans and time spent!
-- [Hacks(Todo)](https://levelup.gitconnected.com/six-ultimate-daily-hacks-for-every-programmer-60f5f10feae) enable you to stay in focus with key requirements of the class.  Each Hack will produce Tangibles.
-- Tangibles or [Tangible Artifacts](https://en.wikipedia.org/wiki/Artifact_(software_development)) are things you accumulate as a learner and coder. 
+## My Freeform Image
+I chose to draw a picture of Walter White from Breaking Bad because it is my favorite show. He is holding the Korean Flag because I am Korean and he is also holding a controller because I like playing video games.
+
+<img src = "images/freeform.jpg" Width="400" height = "700">
