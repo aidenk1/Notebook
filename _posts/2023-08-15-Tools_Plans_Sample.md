@@ -2,8 +2,8 @@
 toc: true
 comments: false
 layout: post
-title: Daily Plan Sample
-description: Example Blog!!!  This shows planning and notes from hacks.
+title: Daily
+description: Planning and hacks notes
 type: plans
 courses: { compsci: {week: 0} }
 ---
