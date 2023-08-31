@@ -2,8 +2,8 @@
 toc: True
 comments: false
 layout: post
-title: JS Output w/jquery
-description: A Tech Talk on outputs using HTML and Javascript.
+title: Calculator
+description
 courses: { compsci: {week: 2} }
 type: hacks
 ---
@@ -197,5 +197,3 @@ vantaInstance({
   gyroControls: false
 });
 </script>
-
-
