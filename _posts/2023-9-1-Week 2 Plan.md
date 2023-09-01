@@ -9,7 +9,7 @@ courses: { compsci: {week: 2} }
 ---
 
 ### PBL Unit 1 / Week 2
--Revise HomePage
--Learn "code fencing, "code cells."
--Revise IPYNB files and add required hacks.
--Add snake
+- Revise HomePage
+- Learn "code fencing, "code cells."
+- Revise IPYNB files and add required hacks.
+- Add snake
