@@ -18,3 +18,11 @@ courses: { compsci: {week: 2} }
 - Exploring data with newspaper and wiki libraries
 - Finding code on how the library was made
 - Learning about data types
+
+### JS Output with jquery
+- Analyze:
+- Making your own tables
+- Benefit of a markdown table
+- Styling HtML table
+- Difference between HTML and JS
+- Benefit of a table using JS
