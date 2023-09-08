@@ -7,7 +7,6 @@ description: EPL 2022-2023
 type: hacks
 courses: { compsci: {week: 3} }
 ---
-<!DOCTYPE html>
 <html>
 <head>
     <title>Ranking Table</title>
