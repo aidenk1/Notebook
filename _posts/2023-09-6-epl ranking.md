@@ -11,42 +11,36 @@ courses: { compsci: {week: 3} }
 <html>
 <head>
     <title>Ranking Table</title>
-    
 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 
-  
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
-
- 
 <style>
-    .custom-dark-table {
-        background-color: #333; /* Dark background color */
-        color: #fff; /* Text color */
-    }
+        .custom-dark-table {
+            background-color: #333;
+            color: #fff;
+        }
 
-    .custom-dark-table th {
-        background-color: #555; /* Header background color */
-    }
+        .custom-dark-table th {
+            background-color: #555;
+        }
 
-    .custom-dark-table thead th {
-        border-color: #777; /* Header border color */
-    }
+        .custom-dark-table thead th {
+            border-color: #777;
+        }
 
-    .custom-dark-table tbody tr:nth-child(odd) {
-        background-color: #444; /* Odd row background color */
-    }
+        .custom-dark-table tbody tr:nth-child(odd) {
+            background-color: #444;
+        }
 
-    .custom-dark-table tbody tr:nth-child(even) {
-        background-color: #333; /* Even row background color */
-    }
+        .custom-dark-table tbody tr:nth-child(even) {
+            background-color: #333;
+        }
 
-    .custom-dark-table tbody td {
-        border-color: #555; /* Cell border color */
-    }
+        .custom-dark-table tbody td {
+            border-color: #555;
+        }
  </style>
 </head>
 <body>
@@ -226,9 +220,13 @@ courses: { compsci: {week: 3} }
     </table>
 
 <script>
-    $(document).ready(function() {
-        $('#teamTable').DataTable();
-    });
+        $(document).ready(function() {
+            $('#teamTable').DataTable({
+                "columnDefs": [
+                    { "type": "num", targets: [2, 3, 4, 5] } // Treat columns 2, 3, 4, and 5 as numeric
+                ]
+            });
+        });
     </script>
 </body>
 </html>
