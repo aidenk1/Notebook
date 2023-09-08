@@ -1,19 +1,28 @@
+---
+toc: true
+comments: false
+layout: post
+title: Prem League Ranking
+description: EPL 2022-2023
+type: hacks
+courses: { compsci: {week: 3} }
+---
 <!DOCTYPE html>
 <html>
 <head>
     <title>Ranking Table</title>
     
-    <!-- Include DataTables CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 
-    <!-- Include jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 
-    <!-- Include DataTables JavaScript -->
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Custom CSS for dark theme -->
-    <style>
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+ 
+<style>
     .custom-dark-table {
         background-color: #333; /* Dark background color */
         color: #fff; /* Text color */
@@ -38,7 +47,7 @@
     .custom-dark-table tbody td {
         border-color: #555; /* Cell border color */
     }
-    </style>
+ </style>
 </head>
 <body>
     <table id="teamTable" class="table custom-dark-table">
