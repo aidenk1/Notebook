@@ -140,7 +140,7 @@ courses: { compsci: {week: 3} }
                 <td>15</td>
                 <td>7</td>
                 <td>16</td>
-                <td>€295.90</td>
+                <td>€295.90m</td>
             </tr>
             <tr>
                 <td>Crystal Palace</td>
@@ -220,7 +220,7 @@ courses: { compsci: {week: 3} }
                 <td>6</td>
                 <td>7</td>
                 <td>25</td>
-                <td>247.80m</td>
+                <td>€247.80m</td>
             </tr>
         </tbody>
     </table>
