@@ -225,7 +225,7 @@ courses: { compsci: {week: 3} }
         </tbody>
     </table>
 
-    <script>
+<script>
     $(document).ready(function() {
         $('#teamTable').DataTable();
     });
