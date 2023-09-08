@@ -93,6 +93,126 @@
                 <td>9</td>
                 <td>€827.30m</td>
             </tr>
+            <tr>
+                <td>Brighton</td>
+                <td>38</td>
+                <td>18</td>
+                <td>8</td>
+                <td>12</td>
+                <td>€376.30m</td>
+            </tr>
+            <tr>
+                <td>Aston Villa</td>
+                <td>38</td>
+                <td>18</td>
+                <td>7</td>
+                <td>13</td>
+                <td>€607.70m</td>
+            </tr>
+            <tr>
+                <td>Tottenham</td>
+                <td>38</td>
+                <td>18</td>
+                <td>6</td>
+                <td>14</td>
+                <td>€689.30m</td>
+            </tr>
+            <tr>
+                <td>Brentford</td>
+                <td>38</td>
+                <td>15</td>
+                <td>14</td>
+                <td>9</td>
+                <td>€365.00m</td>
+            </tr>
+            <tr>
+                <td>Fulham</td>
+                <td>38</td>
+                <td>15</td>
+                <td>7</td>
+                <td>16</td>
+                <td>€295.90</td>
+            </tr>
+            <tr>
+                <td>Crystal Palace</td>
+                <td>38</td>
+                <td>11</td>
+                <td>12</td>
+                <td>15</td>
+                <td>€333.45m</td>
+            </tr>
+            <tr>
+                <td>Chelsea</td>
+                <td>38</td>
+                <td>11</td>
+                <td>11</td>
+                <td>16</td>
+                <td>€925.50m</td>
+            </tr>
+            <tr>
+                <td>Wolves</td>
+                <td>38</td>
+                <td>11</td>
+                <td>8</td>
+                <td>19</td>
+                <td>€289.38m</td>
+            </tr>
+            <tr>
+                <td>West Ham</td>
+                <td>38</td>
+                <td>11</td>
+                <td>7</td>
+                <td>20</td>
+                <td>€443.15m</td>
+            </tr>
+            <tr>
+                <td>Bournemouth</td>
+                <td>38</td>
+                <td>11</td>
+                <td>6</td>
+                <td>21</td>
+                <td>€337.00m</td>
+            </tr>
+            <tr>
+                <td>Nottm Forest</td>
+                <td>38</td>
+                <td>9</td>
+                <td>11</td>
+                <td>18</td>
+                <td>€400.58m</td>
+            </tr>
+             <tr>
+                <td>Everton</td>
+                <td>38</td>
+                <td>8</td>
+                <td>12</td>
+                <td>18</td>
+                <td>€339.25m</td>
+            </tr>
+            <tr>
+                <td>Leicester City</td>
+                <td>38</td>
+                <td>9</td>
+                <td>7</td>
+                <td>22</td>
+                <td>€252.00m</td>
+            </tr>
+            <tr>
+                <td>Leeds United</td>
+                <td>38</td>
+                <td>7</td>
+                <td>10</td>
+                <td>21</td>
+                <td>€209.50m</td>
+            </tr>
+            <tr>
+                <td>Southampton</td>
+                <td>38</td>
+                <td>6</td>
+                <td>7</td>
+                <td>25</td>
+                <td>247.80m</td>
+            </tr>
         </tbody>
     </table>
 
