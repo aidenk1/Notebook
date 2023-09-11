@@ -21,5 +21,6 @@ courses: { compsci: {week: 1} }
 - Run make commands to build and test blog locally, before pushing changes to GitHub pages.
 - Discuss GitHub Account, show ability to push/pull changes from VSCode.
 - Discuss development on Themes, show how you plan to organized lab notebook.
-### Week 2 Accomplishments
-Import sn
+### Pair Showcase Updates
+- Finished Premier League Table and make it interactive using JS and HTML.
+- Added HTML Pacman Game
