@@ -24,4 +24,4 @@ courses: { compsci: {week: 1} }
 ### Pair Showcase Updates
 - Finished Premier League Table and make it interactive using JS and HTML.
 - Added HTML Pacman Game
-- 
+- Used JS to make Snake apple red
