@@ -7,7 +7,7 @@ metadata = {
     "type": "hacks",
     "courses": {
         "compsci": {
-            "week": 3
+            "week": 4
         }
     }
 }
