@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Simulation and Algorithm Notes
 description: Notes in Simulation
-type: plans
+type: hacks
 courses: { compsci: {week: 10} }
 ---
 

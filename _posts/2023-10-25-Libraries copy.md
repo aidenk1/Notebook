@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Libraries Lesson Notes
 description: Planning and hacks notes
-type: plans
+type: hacks
 courses: { compsci: {week: 10} }
 ---
 
@@ -17,4 +17,3 @@ courses: { compsci: {week: 10} }
 
 # API
 - application program interfaces.
-- 
