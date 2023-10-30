@@ -2,8 +2,8 @@
 toc: true
 comments: false
 layout: post
-title: Boolean Notes
-description: Boolean Notes
+title: Algorithm Notes
+description: alg Notes
 type: hacks
 courses: { compsci: {week: 8} }
 ---
