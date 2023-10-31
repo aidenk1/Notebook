@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Week 7 Accomplishments
 description: Work Done
-type: plans
+type: tangibles
 courses: { compsci: {week: 7} }
 ---
 
