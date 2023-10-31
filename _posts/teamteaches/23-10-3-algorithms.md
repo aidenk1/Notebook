@@ -33,6 +33,27 @@ This article covers various aspects of algorithms, including algorithm basics, p
 - String concatenation.
 - Substring function to extract a range of characters from a string.
 
+# HOMEWORK:
+
+## Palindrome Check
+```python
+string = input("Enter a word: ")
+
+def palindrome(words):
+    for i in words:
+        if words[0] != words[len(words)-1]:
+            return "It is not a palindrome"
+    return "It is a palindrome"
+
+print(palindrome(string))
+
+names = ["Jedd", "Bob", "Dentobot", "Chris", "Kaiyu"]
+sorted_names = sorted(names)
+
+print("Names sorted in alphabetical order:")
+for name in sorted_names:
+    print(name)
+
 
 
 
