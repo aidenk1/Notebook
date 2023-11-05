@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Javascript Basics Test
 description: Javascript Basics Test
-type: plans
+type: hacks
 courses: { compsci: {week: 6} }
 ---
 
