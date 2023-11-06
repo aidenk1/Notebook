@@ -16,4 +16,9 @@ courses: { compsci: {week: 11} }
 ### Accomplishments
 - Coded calendar and helped code the todo list for the passion project.
 - Created my own notebok and blog in GitHub
+- Created a program using a 3rd Party API
+- Created my own API for the Passion project that had motivational quotes
+### Things I Learn/Improve
+- Want to improve my overall fluency in Python and JavaScipt
+- Want to do more backend next trimester instead of frontend
 
