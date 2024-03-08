@@ -2,186 +2,149 @@
 toc: true
 comments: false
 layout: post
-title: login
-description:
+title: Log in Page
+description: Login for CPT
 type: hacks
-courses: { compsci: {week: 20} }
+courses: { compsci: {week: 25} }
 ---
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background: #000; /* Changed to black */
-            color: #fff; /* Adjusted for contrast */
-        }
-        .form-container {
-            background: #222; /* Darker background for the form */
-            padding: 20px 40px; /* Adjusted padding for sleekness */
-            border-radius: 5px; /* Smoother edges */
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-            text-align: center;
-        }
-        h2 {
-            margin-bottom: 20px; /* Adjusted spacing */
-            color: #fff; /* Brighter text for readability */
-            font-size: 24px; /* Smaller for sleekness */
-        }
-        label {
-            display: block;
-            text-align: left;
-            margin: 4px 0;
-            color: #bbb; /* Lighter text color for visibility */
-            font-size: 14px;
-        }
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 8px 12px; /* Adjusted for sleekness */
-            margin-bottom: 15px; /* Reduced gap */
-            border: 1px solid #333; /* Subtler border */
-            background: #333; /* Darker input background */
-            color: #fff; /* Text color for inputs */
-            border-radius: 4px; /* Sleeker border radius */
-            box-sizing: border-box;
-            transition: border-color 0.3s;
-        }
-        input[type="text"]:focus,
-        input[type="password"]:focus {
-            border-color: #555; /* Focus color */
-            box-shadow: none; /* Removed for sleekness */
-        }
-        button {
-            width: 100%;
-            padding: 10px 0; /* Adjusted padding */
-            border: none;
-            border-radius: 4px; /* Consistent rounding */
-            background: #333; /* Darker buttons */
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        button:hover {
-            background: #444; /* Hover effect */
-        }
-        .register-btn {
-            background: #444; /* Differentiated register button */
-            margin-top: 8px; /* Adjusted spacing */
-        }
-        .form-footer {
-            margin-top: 15px; /* Adjusted spacing */
-            font-size: 14px;
-            color: #aaa; /* Lighter for visibility */
-        }
-        .form-footer a {
-            color: #999; /* Subtle link color */
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .form-footer a:hover {
-            color: #bbb; /* Hover effect */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    form {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    form:hover {
+      transform: scale(1.02);
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    /* New CSS for User ID and Password labels */
+    label[for="uid"],
+    label[for="password"] {
+      color: black;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease-in-out;
+    }
+    input[type="text"]:focus, input[type="password"]:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .button-spacing {
+      margin-right: 10px;
+    }
+    #errorMessage {
+      color: red;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-<div class="form-container">
-    <form id="loginForm">
-        <h2>Welcome Back!</h2>
-        <label for="loginUsername">Username:</label>
-        <input type="text" id="loginUsername" name="loginUsername" required>
-        <label for="loginPassword">Password:</label>
-        <input type="password" id="loginPassword" name="loginPassword" required>
-        <button type="submit">Log In</button>
-        <button type="button" class="register-btn" id="goToSignup">Register</button>
-        <div class="form-footer">
-            <a href="#">Forgot your password?</a>
-        </div>
-    </form>
-</div>
-<script>
-document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent default form submission
-    const username = document.getElementById('loginUsername').value;
-    const password = document.getElementById('loginPassword').value;
-    // Check if the username and password match the hardcoded credentials
-    if (username === "toby" && password === "123toby") {
-        alert('Login successful! Redirecting...');
-        window.location.href = 'game.html'; // Redirect to another page on success
-    } else {
-        // If the credentials don't match, display an error message
-        alert('Error logging in: Invalid username or password.');
+  <div id="errorMessage"></div>
+  <form>
+    <p>
+      <label for="uid">User ID:</label>
+      <input type="text" name="uid" id="uid" required>
+    </p>
+    <p>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" required>
+    </p>
+    <p>
+      <button type="button" class="button-spacing" onclick="login_user()">Log In</button>
+      <button type="button" onclick="window.location.href='https://aidenk1.github.io/geocpt/signup'" class="button-spacing">Sign Up</button>
+    </p>
+  </form>
+
+  <script>
+    function login_user() {
+      console.log("login_user function called"); 
+      const enteredUid = document.getElementById("uid").value;
+      const enteredPassword = document.getElementById("password").value;
+      console.log("Uid = " + enteredUid)
+      console.log("Password = " + enteredPassword)
+      login_api(enteredUid, enteredPassword); 
     }
-});
-</script>
+
+    async function login_api(uid, password) { 
+      console.log("login_api function called"); 
+      var myHeaders = new Headers();
+      myHeaders.append("Accept", "*/*");
+      myHeaders.append("Accept-Language", "en-US,en;q=0.9");
+      myHeaders.append("Content-Type", "application/json");
+      myHeaders.append("Cookie", "jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfdWlkIjoidG9ueSJ9.jEShka0oXI1-uCuSTfo3ed5WRw3ASLNV0Tpn1kc5GB0");
+      
+      var raw = JSON.stringify({
+        "uid": uid, 
+        "password": password 
+      });
+
+      var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+      };
+
+      try {
+        const response = await fetch("http://127.0.0.1:8086/api/users/authenticate/", requestOptions);
+        console.log("Code is working"); 
+
+        if (response.ok) {
+          console.log("User logged in successfully");
+          alert("Login Successful!!");
+          // Set user ID in local storage
+          localStorage.setItem('userId', uid);
+          window.location.href = "https://aidenk1.github.io/geocpt/homepage"; // Redirecting to homepage
+        } else {
+          console.error("User login failed");
+          alert("Login Unsuccessful");
+          const errorMessageDiv = document.getElementById('errorMessage');
+          errorMessageDiv.innerHTML = '<label style="color: red;">User Login Failed</label>';
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert("An error occurred during login: " + error.message); // Displaying the error message
+      }
+    }
+  </script>
 </body>
 </html>
-<script>
-// Handle the signup form submission
-document.getElementById('signupForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent default form submission
-    const signupData = {
-        uid: document.getElementById('username').value,
-        password: document.getElementById('password').value,
-        // dob: document.getElementById('dob').value, // Uncomment and add a dob input if needed
-    };
-    fetch('http://127.0.0.1:8086/api/users', { // Adjust the endpoint if necessary
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(signupData),
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        console.log(data);
-        alert('Account created successfully!');
-    })
-    .catch(error => {
-        console.error('There was a problem with your fetch operation:', error);
-        alert('Error creating account: ' + error.message);
-    });
-});
-// Handle the login form submission
-document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent default form submission
-    const loginData = {
-        uid: document.getElementById('loginUsername').value,
-        password: document.getElementById('loginPassword').value,
-    };
-    fetch('http://127.0.0.1:8086/api/users/authenticate', { // Adjust the endpoint if necessary
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(loginData),
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Login failed: ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        console.log(data);
-        alert('Login successful!');
-    })
-    .catch(error => {
-        console.error('There was a problem with the login operation:', error);
-        alert('Error logging in: ' + error.message);
-    });
-});
-</script>
