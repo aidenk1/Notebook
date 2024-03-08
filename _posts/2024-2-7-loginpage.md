@@ -5,7 +5,7 @@ layout: post
 title: Log in Page
 description: Login for CPT
 type: hacks
-courses: { compsci: {week: 25} }
+courses: { compsci: {week: 21} }
 ---
 <html lang="en">
 
