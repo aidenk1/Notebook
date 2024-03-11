@@ -18,3 +18,4 @@ courses: { compsci: {week: 26} }
 - [Binary Project Key Commits](https://aidenk1.github.io/Notebook//2024/01/17/KeyProj.html)
 - [Practice MCQ Review 1](https://aidenk1.github.io/Notebook//2024/01/08/CBQUIZ.html)
 - [Student Scoring Table](https://github.com/aidenk1/Notebook/issues/6)
+- [CPT Frontend Analytics](https://github.com/aidenk1/geocpt/commits/main/?author=aidenk1) We decided to make a new repository with just the CPT files since our old one had code from the old binary project so we do not have as many commits since we were just transferring files into the new repository.
