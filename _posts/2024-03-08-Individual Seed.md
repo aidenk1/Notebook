@@ -14,7 +14,7 @@ courses: { compsci: {week: 26} }
 # Progress
 - [Individual CPT Blog](https://aidenk1.github.io/Notebook//2024/02/28/CPTIndiv.html)
 - [CPT Video](https://drive.google.com/file/d/1xA0rlu6vFjEZg2QzlDehtS6umYvMkYB3/view?usp=sharing)
-- [CPT Key Commits]()
+- [CPT Key Commits](https://aidenk1.github.io/Notebook//2024/03/06/CPTkeycommits.html)
 - [Binary Project Key Commits](https://aidenk1.github.io/Notebook//2024/01/17/KeyProj.html)
 - [Practice MCQ Review 1](https://aidenk1.github.io/Notebook//2024/01/08/CBQUIZ.html)
 - [Student Scoring Table](https://github.com/aidenk1/Notebook/issues/6)
