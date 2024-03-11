@@ -2,10 +2,10 @@
 toc: true
 comments: false
 layout: post
-title: Week 25 Plans
-description: Plans for the week
-type: plans
-courses: { compsci: {week: 25} }
+title: CPT commits
+description: 
+type: hacks
+courses: { compsci: {week: 24} }
 ---
 # Key commits
 - My big features for the CPT project
