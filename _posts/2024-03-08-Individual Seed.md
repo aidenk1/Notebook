@@ -3,7 +3,9 @@ toc: true
 comments: false
 layout: post
 title: Individual Seed
-description: Plans for the week
+description: 
 type: plans
-courses: { compsci: {week: 25} }
+courses: { compsci: {week: 26} }
 ---
+# My grade from last trimester
+![Grade](images/grade.png)
