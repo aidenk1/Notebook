@@ -37,6 +37,7 @@ courses: { compsci: {week: 26} }
         label {
             display: block;
             margin-bottom: 10px;
+            color: black; /* Added this line to make labels black */
         }
 
         input[type="text"],
