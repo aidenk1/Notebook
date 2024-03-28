@@ -89,8 +89,8 @@ button:hover {
 
     <label for="gender">Gender:</label>
     <select id="gender" name="gender" required>
-      <option value="Male">Male</option>
-      <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
     </select>
 
     <label for="hypertension">Hypertension (0 for No, 1 for Yes):</label>
@@ -101,21 +101,21 @@ button:hover {
 
     <label for="everMarried">Ever Married:</label>
     <select id="everMarried" name="everMarried" required>
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
     </select>
 
     <label for="workType">Work Type:</label>
-    <select id="workType" name="work_type" required>
-      <option value="Private">Private</option>
-      <option value="Self-employed">Self-employed</option>
-      <option value="Other">Other</option>
+    <select id="workType" name="work_type" required> <!-- Adjusted name to match backend -->
+        <option value="Private">Private</option>
+        <option value="Self-employed">Self-employed</option>
+        <option value="Other">Other</option>
     </select>
 
     <label for="residenceType">Residence Type:</label>
     <select id="residenceType" name="residenceType" required>
-      <option value="Rural">Rural</option>
-      <option value="Urban">Urban</option>
+        <option value="Rural">Rural</option>
+        <option value="Urban">Urban</option>
     </select>
 
     <label for="avgGlucoseLevel">Average Glucose Level:</label>
@@ -125,24 +125,22 @@ button:hover {
     <input type="number" id="bmi" name="bmi" step="0.01" required>
 
     <button type="submit">Predict Stroke Probability</button>
-  </form>
+</form>
 
   <div id="result"></div>
 </div>
-
 <script>
 document.getElementById("predictionForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent form submission
   predictStroke(); // Call function to predict stroke probability
 });
-
 function predictStroke() {
   // Get input values from the form
   var formData = {
     age: parseInt(document.getElementById("age").value),
     gender: document.getElementById("gender").value,
-    hypertension: parseInt(document.getElementById("hypertension").value),
-    heart_disease: parseInt(document.getElementById("heartDisease").value), // Adjusted key
+    hypertension: document.getElementById("hypertension").value === "0" ? 0 : 1, // Adjusted to handle "0" input
+    heart_disease: document.getElementById("heartDisease").value === "0" ? 0 : 1, // Adjusted to handle "0" input
     ever_married: document.getElementById("everMarried").value, // Adjusted key
     work_type: document.getElementById("workType").value,
     Residence_type: document.getElementById("residenceType").value, // Adjusted key
@@ -170,7 +168,5 @@ function predictStroke() {
   });
 }
 </script>
-
-
 </body>
 </html>
