@@ -7,8 +7,6 @@ description: My thoughts on all of the dances/skits and my understanding of the 
 type: hacks
 courses: { compsci: {week: 28} }
 ---
-### Google Drive Link to the Inserted Sorting Dance:  
-
 ### Inserted Sorting
 How it works is you have to compare the second element in the array to the first, if the second is smaller, it swaps with the first element, then compare third element to the ones before it. Repeat and move left to right until the correct position is found for every element. Very funny and creative representation of sorting with the beat boxing, rapping, and the dolphin. Entertaining and easy to stay engaged
 ### Quick Sort
